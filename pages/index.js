@@ -25,9 +25,9 @@ export default function Home() {
       <div>
         <Head>
           <title>Quiz Mestre Jedi em JavaScript</title>
-          <meta property="og:title" content="My page title" key="title" />
-          <meta property="og:image" content={db.bg}/>
-          <meta property="og:image:type" content={db.bg}/>
+          <meta property="og:title" content="Quiz Mestre Jedi em JavaScript" key="title" />
+          <meta property="og:image" content="https://miro.medium.com/max/2732/1*LyZcwuLWv2FArOumCxobpA.png"/>
+          <meta property="og:image:type" content="imagem/png"/>
           <meta property="og:image:width" content="800"/>
           <meta property="og:image:height" content="600"/> 
         </Head>

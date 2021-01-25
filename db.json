@@ -1,0 +1,43 @@
+{
+    "bg": "https://dlior9lx1k7r2.cloudfront.net/postphoto/02cb8b84-1012-4032-ba10-4a543e49ab2c.gif",
+    "title": "Quiz Mestre Jedi em JavaScript",
+    "description": "Teste os seus conhecimentos sobre JavaScript e vá de Padawan a Mestre Jedi ;)  ",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Como fazer um seletor por id via CSS?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          ".elemento",
+          "*elemento",
+          "#elemento",
+          "%elemento"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Como fazer um background gradiente com css?",
+        "description": "Faz tempo em haha",
+        "answer": 0,
+        "alternatives": [
+           "background: linear-gradient(#e66465, #9198e5);",
+           "background: gradient(#e66465, #9198e5);"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#ffeb3b",
+        "secondary": "#b2a429",
+        "mainBg": "#171B35",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }

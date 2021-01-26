@@ -10,18 +10,20 @@ overflow: hidden;
 text-align: center;
 
 h1,h2,h3 {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 0;
   color:black;
+  font-family: 'Economica', sans-serif;
 
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
+  font-family: 'Economica', sans-serif;
 }
 `;
 

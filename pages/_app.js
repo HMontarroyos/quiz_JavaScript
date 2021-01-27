@@ -15,7 +15,9 @@ body {
   font-family: 'Lato', sans-serif;
   // Deixa branco no começo
   color: ${({ theme }) => theme.colors.contrastText};
-  font-family: 'Economica', sans-serif;
+  //font-family: 'Economica', sans-serif;
+  //font-family: 'Oswald', sans-serif;
+  font-family: 'Play', sans-serif !important;
 }
 html, body {
   min-height: 100vh;
@@ -41,6 +43,8 @@ export default function App({ Component, pageProps }) {
                 <meta property="og:image:height" content="600" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"/>
             </Head>
             <ThemeProvider theme={theme}>
                 <GlobalStyle />

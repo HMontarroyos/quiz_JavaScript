@@ -4,25 +4,33 @@
     "description": "Teste os seus conhecimentos sobre JavaScript e vá de Padawan a Mestre Jedi ;)  ",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media2.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
+        "title": " Qual método serve para filtrarmos os elementos de um Array ?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+            "filter()",
+            "toString()"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://gestaodeclinicas.ajmed.com.br/wp-content/uploads/2020/02/developer-dribbble.gif",
+        "title": "Para que serve o método fetch() ?",
+        "description": "Essa é boa para testar",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           " Serve para fornece uma maneira fácil e lógica de  buscar recursos de forma assíncrona através de uma API.",
+           " Serve para retornar true se a variável é um array e false caso contrário."
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif",
+        "title": "O que faz o método Array.from()",
+        "description": "Bora aprender um pouco sobre os métodos de Array",
+        "answer": 0,
+        "alternatives": [
+           "Converte todo o Valor contido no tipo string. ",
+           "Cria uma nova instância de Array a partir de um objeto semelhante ou iterável."
         ]
       }
     ],

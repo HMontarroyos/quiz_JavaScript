@@ -31,6 +31,15 @@ function ResultWidget({ results }) {
           {' '}
           perguntas
         </p>
+        <img
+          alt="Finalizando"
+          style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+            borderRadius: 10,
+          }}
+          src={"https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif"}/>
 {/*         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>

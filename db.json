@@ -42,6 +42,66 @@
            "XMLHttpRequest. ",
            "XMLHttpResponse."
         ]
+      },      
+      {
+        "image": "https://i2.wp.com/oraculoti.com.br/wp-content/uploads/2017/07/indent.gif?resize=714%2C368&ssl=1",
+        "title": "Qual das formas esta certa de como você cria uma função em JavaScript?",
+        "description": "Essa não dá para errar ne kkk ",
+        "answer": 0,
+        "alternatives": [
+            "function myFunction()",
+            "function:myFunction()"
+        ]
+      },
+      {
+        "image": "https://cdn-course-logos.exlskills.com/javascript-on-off.gif",
+        "title": "Quando foi criado o JavaScript ?",
+        "description": "Vamos um pouco de Conhecimento Geral da linguagem hehe",
+        "answer": 1,
+        "alternatives": [
+           "1972",
+           "1995"
+        ]
+      },
+      {
+        "image": "https://perezhilton.com/wp-content/uploads/2014/04/brendan-eich-edit.gif",
+        "title": "Qual o nome do Desenvolvedor do JavaScript ?",
+        "description": "Mais um pouco de conhecimento Geral kkk",
+        "answer": 1,
+        "alternatives": [
+           "Tim Berners-Lee",
+           "Brendan Eich"
+        ]
+      },
+      {
+        "image": "https://media4.giphy.com/media/u7D5EyS2EFlpC/giphy.webp?cid=ecf05e47bc1unway06hn8tsqhbttjsgwszcx48x6bg73lc8d&rid=giphy.webp",
+        "title": "O que faz o Recursion ?",
+        "description": "Boa para praticar essa questão .",
+        "answer": 0,
+        "alternatives": [
+           "É Uma funcionalidade que permite uma função se chamar novamente",
+           "É um método que e possivel mapear um Array"
+        ]
+      },
+      {
+        "image": "https://miro.medium.com/max/1050/1*wiGROefO_zOJw3NKSGNl2w.png",
+        "title": "O que faz a RegEx (Expressões regulares ) da imagem acima ?",
+        "description": "Regex… Reg o quê ?!",
+        "answer": 1,
+        "alternatives": [
+          "Retorna uma matriz de resultado ou null caso seja true",
+           "Verifica se há um padrão de endereço de e-mail"
+        ]
+      },
+      {
+        "image": "https://cdn-images-1.medium.com/max/1600/0*zb_DFIW9XNlzVW93",
+        "title": "Qual a funcionalidade de usar o Strict mode no JavaScript ?",
+        "description": "Opa Será que você acerta essa ?",
+        "answer": 0,
+        "alternatives": [
+           "Deixa o JavaScript mais rigoroso na hora de se programar",
+           "Definir um mode restrito dentro de uma function para se passar uma determinada props"
+        ]
       }
     ],
     "external": [

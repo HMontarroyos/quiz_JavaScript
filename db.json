@@ -32,6 +32,16 @@
            "Converte todo o Valor contido no tipo string. ",
            "Cria uma nova instância de Array a partir de um objeto semelhante ou iterável."
         ]
+      },
+      {
+        "image": "https://engineering.giphy.com/wp-content/uploads/2017/06/api.gif",
+        "title": "Antes do Fetch as requisições HTTP eram feitas através de qual método ?",
+        "description": "Essa é pegadinha kkkk",
+        "answer": 0,
+        "alternatives": [
+           "XMLHttpRequest. ",
+           "XMLHttpResponse."
+        ]
       }
     ],
     "external": [

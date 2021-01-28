@@ -27,7 +27,7 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Economica', sans-serif;
 }
 `;
 

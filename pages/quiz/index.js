@@ -1,13 +1,14 @@
 import React from  'react';
 
 
-import db from "../db.json";
-import QuizBackground from "../src/Components/QuizBackground";
-import QuizLogo from "../src/Components/QuizLogo";
-import QuizContainer from "../src/Components/QuizContainer";
-import Widget from "../src/Components/Widget";
-import Button from "../src/Components/Button";
-import  AlternativesForm from "../src/Components/AlternativesForm";
+import db from "../../db.json";
+import QuizBackground from "../../src/Components/QuizBackground";
+import QuizLogo from "../../src/Components/QuizLogo";
+import QuizContainer from "../../src/Components/QuizContainer";
+import Widget from "../../src/Components/Widget";
+import Button from "../../src/Components/Button";
+import  AlternativesForm from "../../src/Components/AlternativesForm";
+import BackLinkArrow from '../../src/Components/BackLinkArrow';
 
 function ResultWidget({ results }) {
   return (
@@ -20,13 +21,6 @@ function ResultWidget({ results }) {
         <p>
           Você acertou
           {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
           {results.filter((x) => x).length}
           {' '}
           perguntas
@@ -96,7 +90,7 @@ function LoadingWidget(){
     return (
       <Widget>
         <Widget.Header>
-          {/* <BackLinkArrow href="/" /> */}
+           <BackLinkArrow href="/" />
           <h3>
             {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
           </h3>
@@ -231,3 +225,7 @@ function LoadingWidget(){
 
 
 // TODO:  TRATAR UM IF SE ACERTOU TANTAS PERGUNTAS AMOSTRE UMA TELA SE NÃO AMOSTRE ESSA SE NÃO AMOSTRE OUTRA 
+// TODO: AJUSTAR TRANSIÇÃO NO HEADER DAS PERGUNTAS 
+// TODO: AJUSTAR BUTTONS AO ACERTAR PERGUNTA 
+// TODO: NA TELA DE RESULTADOS CONCATENAR COM O NOME DIGITADO DO USUARIO
+

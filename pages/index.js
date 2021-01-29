@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {useRouter} from 'next/router';
-
+import {motion} from 'framer-motion';
 
 import db from "../db.json";
 import Footer from "../src/Components/Footer";
@@ -11,6 +11,7 @@ import QuizContainer from "../src/Components/QuizContainer";
 import Widget from "../src/Components/Widget";
 import Input from "../src/Components/Input";
 import Button from "../src/Components/Button";
+import Link from '../src/Components/Link';
 
 
 
@@ -22,7 +23,16 @@ export default function Home() {
         <QuizBackground backgroundImage={db.bg}>
             <QuizContainer>
                 <QuizLogo />
-                <Widget>
+                <Widget
+                    as={motion.section}
+                    transition={{delay:0, duration:0.5}}
+                    variants={{
+                        show:{opacity:1, y:'0'},
+                        hidden:{opacity: 0, y:'100%'},
+                    }}
+                    initial="hidden"
+                    animate="show"
+                >
                     <Widget.Header>
                         <h1>{db.title}</h1>
                     </Widget.Header>
@@ -48,7 +58,16 @@ export default function Home() {
                         </form>
                     </Widget.Content>
                 </Widget>
-                <Widget>
+                <Widget
+                    as={motion.section}
+                    transition={{delay:0.5, duration:0.5}}
+                    variants={{
+                        show:{opacity:1},
+                        hidden:{opacity: 0},
+                        }}
+                    initial="hidden"
+                    animate="show"
+                >
                     <Widget.Header>
                         <h1>Demais Quizes de Front-end da Comunidade</h1>
                     </Widget.Header>
@@ -58,9 +77,35 @@ export default function Home() {
                             com os Quizes das Principais Tecnologias de
                             Front-end
                         </p>
+                        <ul>
+                            {db.external.map((linkExterno)=>{
+                                const [projectName, githubUser] = linkExterno
+                                .replace(/\//g,'')
+                                .replace('https:','')
+                                .replace('.vercel.app','')
+                                .split('.');
+
+                                return(
+                                    <li key={linkExterno}>
+                                        <Widget.Topic as={Link}href={`/quiz/${projectName}__${githubUser}`}>
+                                            {`${githubUser}/${projectName}`}
+                                        </Widget.Topic>
+                                    </li>
+                                );
+                            })}
+                        </ul>
                     </Widget.Content>
                 </Widget>
-                <Footer />
+                <Footer
+                    as={motion.footer}
+                    transition={{delay:0.5, duration:0.5}}
+                    variants={{
+                        show:{opacity:1},
+                        hidden:{opacity: 0},
+                        }}
+                    initial="hidden"
+                    animate="show"
+                />
             </QuizContainer>
             <GitHubCorner projectUrl="https://github.com/HMontarroyos" />
         </QuizBackground>

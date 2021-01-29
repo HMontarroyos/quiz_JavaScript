@@ -102,6 +102,26 @@
            "Deixa o JavaScript mais rigoroso na hora de se programar",
            "Definir um mode restrito dentro de uma function para se passar uma determinada props"
         ]
+      },
+      {
+        "image": "https://media1.tenor.com/images/963dbf83410067b8216bf3fbeec50874/tenor.gif?itemid=5012719",
+        "title": "O que é throw nem Error no codigo JavaScript ?",
+        "description": "Ops Error ...",
+        "answer": 0,
+        "alternatives": [
+           "São erros no programa, que criamos caso alguma condição não seja atendida",
+           "São erros gerados automaticamente quando declaramos algo errado no codigo"
+        ]
+      },
+      {
+        "image": "https://thumbs.gfycat.com/IncredibleGrouchyEarwig-size_restricted.gif",
+        "title": "O bloco Finally no JavaScript é executado independente do resultado do try/catch?",
+        "description": "Essa é boa para treinar ",
+        "answer": 1,
+        "alternatives": [
+           "false",
+           "true"
+        ]
       }
     ],
     "external": [

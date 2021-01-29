@@ -128,7 +128,7 @@ function LoadingWidget(){
                 onSubmit();
                 setIsQuestionSubmited(false);
                 setselectedAlternative(undefined);
-              },3* 1000)
+              },2000)
               
             }}
           >
@@ -146,7 +146,7 @@ function LoadingWidget(){
                   data-status={isQuestionSubmited && alternativeStatus}
                 >
                   <input
-                    style={{ display: 'none' }}
+                    //style={{ display: 'none' }}
                     id={alternativeId}
                     name={questionId}
                     onChange={()=> setselectedAlternative(alternativeIndex)}

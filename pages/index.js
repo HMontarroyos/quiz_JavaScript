@@ -73,7 +73,7 @@ export default function Home() {
                     </Widget.Header>
                     <Widget.Content>
                         <p>
-                            Desbrave a Galáxia e Adquira mais conhecimentos
+                            Desbrave o Aluraverso e Adquira mais conhecimentos
                             com os Quizes das Principais Tecnologias de
                             Front-end
                         </p>

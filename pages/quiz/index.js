@@ -10,30 +10,47 @@ import Button from "../../src/Components/Button";
 import  AlternativesForm from "../../src/Components/AlternativesForm";
 import BackLinkArrow from '../../src/Components/BackLinkArrow';
 
+const totalQuestions = db.questions.length;
+
+function ImageResult(){
+ if(results.filter((x) => x).length >= (totalQuestions / 2)){
+    return 'https://img.ibxk.com.br/2020/01/30/30021141299110.jpg?w=1120&h=420&mode=crop&scale=both'
+ }else if((results.filter((x) => x).length >= (totalQuestions / 3))){
+   return  'https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif'
+ }
+}
+
+
+
 function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        <h1>RESULTADOS</h1>
+        <h1>RESULTADO</h1>
       </Widget.Header>
 
       <Widget.Content>
         <p>
-          Você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
+          {`${name} Você acertou ${results.filter((x) => x).length} ${results.filter((x) => x).length > 1 ? 'perguntas' : 'pergunta'} de ${totalQuestions}.`}
         </p>
         <img
-          alt="Finalizando"
           style={{
             width: '100%',
             height: '150px',
             objectFit: 'cover',
             borderRadius: 10,
           }}
-          src={"https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif"}/>
+            src={results.filter((x) => x).length >= (totalQuestions / 2)
+              ? 'https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif'
+              : 'https://media.tenor.com/images/097d93c00e81371b1d206e98df61b8a3/tenor.gif'}
+            alt="resultados"
+          />
+          <p>
+            {results.filter((x) => x).length >= (totalQuestions / 2)
+              ? 'Parabéns, você conhece bem de JavaScript mais ainda pode ir além '
+              : 'Ops ... parece que você ainda tem um pouco de dificuldade hein ? mais não desanime continue tentando '}
+          </p>
+
 {/*         <ul>
           {results.map((result, index) => (
             <li key={`result__${result}`}>
@@ -173,7 +190,6 @@ function LoadingWidget(){
   export default function QuizPage() {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
     const [results, setResults] = React.useState([]);
-    const totalQuestions = db.questions.length;
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const questionIndex = currentQuestion;
     const question = db.questions[questionIndex];

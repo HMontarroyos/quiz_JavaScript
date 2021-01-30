@@ -69,7 +69,11 @@ Widget.Topic = styled.a`
   transition: .3s;
   display: block;
   
-  &:hover,
+  &:hover{
+    opacity: .5;
+    box-shadow: rgb(34, 34, 34) 2px 2px 2px;
+    transform: translate(-10px);
+  }
   &:focus {
     opacity: .5;
   }

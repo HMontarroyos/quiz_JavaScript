@@ -10,34 +10,6 @@ import Button from '../../Button';
 import  AlternativesForm from '../../AlternativesForm';
 import BackLinkArrow from '../../BackLinkArrow';
 
-function ResultWidget({ results }) {
-  return (
-    <Widget>
-      <Widget.Header>
-        <h1>RESULTADOS</h1>
-      </Widget.Header>
-
-      <Widget.Content>
-        <p>
-          Você acertou
-          {' '}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
-        <img
-          alt="Finalizando"
-          style={{
-            width: '100%',
-            height: '150px',
-            objectFit: 'cover',
-            borderRadius: 10,
-          }}
-          src={"https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif"}/>
-      </Widget.Content>
-    </Widget>
-  );
-}
 
 function LoadingWidget(){
     return(
@@ -137,15 +109,9 @@ function LoadingWidget(){
                 </Widget.Topic>
               );
             })}
-  
-            {/* <pre>
-              {JSON.stringify(question, null, 4)}
-            </pre> */}
             <Button type="submit" disabled={!hasAlternativeSelected}>
               Confirmar
             </Button>
-{/*             {isQuestionSubmited && isCorrect && <p>Acertou</p>}
-                {isQuestionSubmited && !isCorrect && <p>Errou</p>} */}
           </AlternativesForm>
         </Widget.Content>
       </Widget>
@@ -165,6 +131,7 @@ function LoadingWidget(){
     const questionIndex = currentQuestion;
     const question = externalQuestions[questionIndex];
     const bg = externalBg;
+    
 
     function addResult(result) {
       setResults([
@@ -172,7 +139,39 @@ function LoadingWidget(){
         result,
       ]);
     }
-  
+    function ResultWidget({ results }) {
+      return (
+        <Widget>
+          <Widget.Header>
+            <h1>RESULTADOS</h1>
+          </Widget.Header>
+    
+          <Widget.Content>
+          <p>
+              {`Você acertou ${results.filter((x) => x).length} ${results.filter((x) => x).length > 1 ? 'perguntas' : 'pergunta'} de ${totalQuestions}.`}
+            </p>
+            <img
+              style={{
+                width: '100%',
+                height: '150px',
+                objectFit: 'cover',
+                borderRadius: 10,
+              }}
+                src={results.filter((x) => x).length >= (totalQuestions / 2)
+                  ? 'https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif'
+                  : 'https://media.tenor.com/images/097d93c00e81371b1d206e98df61b8a3/tenor.gif'}
+                alt="resultados"
+              />
+              <p>
+                {results.filter((x) => x).length >= (totalQuestions / 2)
+                  ? 'Parabéns, você conhece bem desse assunto, mais ainda pode ir além '
+                  : 'Ops ... parece que você ainda tem um pouco de dificuldade hein ? mais não desanime continue tentando '}
+              </p>
+          </Widget.Content>
+        </Widget>
+      );
+    }
+
     React.useEffect(() => {
       // fetch() ...
       setTimeout(() => {

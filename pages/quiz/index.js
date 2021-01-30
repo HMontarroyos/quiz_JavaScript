@@ -1,5 +1,5 @@
 import React from  'react';
-
+import { useRouter } from 'next/router';
 
 import db from "../../db.json";
 import QuizBackground from "../../src/Components/QuizBackground";
@@ -12,17 +12,20 @@ import BackLinkArrow from '../../src/Components/BackLinkArrow';
 
 const totalQuestions = db.questions.length;
 
-function ImageResult(){
- if(results.filter((x) => x).length >= (totalQuestions / 2)){
-    return 'https://img.ibxk.com.br/2020/01/30/30021141299110.jpg?w=1120&h=420&mode=crop&scale=both'
- }else if((results.filter((x) => x).length >= (totalQuestions / 3))){
-   return  'https://media0.giphy.com/media/5UqQOhnfQbg4IG0utP/giphy.gif'
- }
-}
-
-
-
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
+
+/*   function FraseResult(){
+    if(results.filter((x) => x).length >= (totalQuestions / 2)){
+       return 'Parabéns, você conhece bem de JavaScript mais ainda pode ir além'
+    }else if((results.filter((x) => x).length = (totalQuestions))){
+      return  'Parabéns, você com certeza conhece do assunto. Gabaritou tudo isso ae hehe esse é o caminho ;) '
+    }else {
+      return 'Ops ... parece que você ainda tem um pouco de dificuldade hein ? mais não desanime continue tentando' 
+    }
+   }
+ */
   return (
     <Widget>
       <Widget.Header>
@@ -103,6 +106,8 @@ function LoadingWidget(){
     const questionId = `question__${questionIndex}`;
     const isCorrect = selectedAlternative === question.answer;
     const hasAlternativeSelected = selectedAlternative !== undefined;
+
+
 
     return (
       <Widget>
@@ -209,6 +214,7 @@ function LoadingWidget(){
     }, []);
   
     function handleSubmitQuiz() {
+      //event.preventDefault();
       const nextQuestion = questionIndex + 1;
       if (nextQuestion < totalQuestions) {
         setCurrentQuestion(nextQuestion);
@@ -240,8 +246,6 @@ function LoadingWidget(){
 }
 
 
-// TODO:  TRATAR UM IF SE ACERTOU TANTAS PERGUNTAS AMOSTRE UMA TELA SE NÃO AMOSTRE ESSA SE NÃO AMOSTRE OUTRA 
-// TODO: AJUSTAR TRANSIÇÃO NO HEADER DAS PERGUNTAS 
 // TODO: AJUSTAR BUTTONS AO ACERTAR PERGUNTA 
-// TODO: NA TELA DE RESULTADOS CONCATENAR COM O NOME DIGITADO DO USUARIO
+
 

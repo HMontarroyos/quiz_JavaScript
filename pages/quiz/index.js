@@ -29,6 +29,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h1>RESULTADO</h1>
       </Widget.Header>
 
@@ -162,10 +163,10 @@ function LoadingWidget(){
                   data-status={isQuestionSubmited && alternativeStatus}
                 >
                   <input
-                    //style={{ display: 'none' }}
+                    style={{ display: 'none' }}
                     id={alternativeId}
                     name={questionId}
-                    onChange={()=> setselectedAlternative(alternativeIndex)}
+                    onClick={()=> setselectedAlternative(alternativeIndex)}
                     type="radio"
                   />
                   {alternative}

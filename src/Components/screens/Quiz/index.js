@@ -99,10 +99,10 @@ function LoadingWidget(){
                   data-status={isQuestionSubmited && alternativeStatus}
                 >
                   <input
-                    //style={{ display: 'none' }}
+                    style={{ display: 'none' }}
                     id={alternativeId}
                     name={questionId}
-                    onChange={()=> setselectedAlternative(alternativeIndex)}
+                    onClick={()=> setselectedAlternative(alternativeIndex)}
                     type="radio"
                   />
                   {alternative}
@@ -143,6 +143,7 @@ function LoadingWidget(){
       return (
         <Widget>
           <Widget.Header>
+            <BackLinkArrow href="/" />
             <h1>RESULTADOS</h1>
           </Widget.Header>
     

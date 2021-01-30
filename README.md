@@ -15,7 +15,7 @@ Uma Biblioteca do CSS para utilizar via NPM no codigo ajuda na estilização de 
 * [NextJS](https://nextjs.org/).
 Next.js é uma estrutura da web de desenvolvimento front-end do React de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.
 
-*[Vercel](https://vercel.com/)
+* [Vercel](https://vercel.com/)
 Utilizado para efetuar o Deploy e subir no ar a aplicação criada no Next. 
 
 ## Deploy da Aplicação 

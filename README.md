@@ -1,78 +1,53 @@
-# Example app with styled-components
+# Alura Quiz - Projeto Criado em NextJS  com template no styled-components
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+Projeto Criado na 2° Imersão React nextJS na Alura.
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+Quiz de JavaScript ;) 
 
-## Deploy your own
+### Ferramentas Utilizadas na Criação do Projeto  
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+* [styled-components](https://github.com/styled-components/styled-components).
+Utilizado Template do Styled Components no React para ajudar a estilizar o app.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+* [Framer-Motion](https://www.framer.com/motion/).
+Uma Biblioteca do CSS para utilizar via NPM no codigo ajuda na estilização de animações.
 
-## How to use
+* [NextJS](https://nextjs.org/).
+Next.js é uma estrutura da web de desenvolvimento front-end do React de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+*[Vercel](https://vercel.com/)
+Utilizado para efetuar o Deploy e subir no ar a aplicação criada no Next. 
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
+## Deploy da Aplicação 
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[Deploy_da_Aplicação](https://aluraquiz-javascript-git-main.hmontarroyos.vercel.app/):
 
-### Try it on CodeSandbox
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+# Notes 
 
-### Notes
+OBS* Todo o Codigo manipulavel onde contem as questões, background, theme etc ... se encontra dentro do arquivo db.json dentro do projeto.
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
+OBS* Dentro do projeto tem uma pasta chamada API dentro da pages onde se encontra um arquivo db.js que transforma o db.json em uma especie de api publica podendo assim conseguir utilizar dos metodos padrões como o fetch() para pegar suas informações e responsavel por conseguir se comunicar com outros projetos de Quizes da Imersão NExtJS da Alura. 
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
+### `npx create-next-app --example with-styled-components`
 
-**components/StyledLink.js**
+Iniciando um Projeto Next JS com Styled Components 
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
+### `npm install`
 
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
+Para Baixar as Dependências do Projeto 
 
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
+### `npm run dev`
 
-  &:hover {
-    color: #40a9ff;
-  }
+Para Inicializar o Projeto 
+Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador. 
 
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
+<img width="939" alt="Quiz" src="https://user-images.githubusercontent.com/60220406/106364330-fa001980-630c-11eb-8d35-f601789b89c4.png">
 
-**pages/index.js**
 
-```javascript
-import StyledLink from '../components/StyledLink'
 
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
+<img width="934" alt="Quiz2" src="https://user-images.githubusercontent.com/60220406/106364331-fb314680-630c-11eb-8841-172c9ef18201.png">
 
-</details>
+
+### 🚀 Let's code! 🚀 ###
+

@@ -20,7 +20,7 @@ Utilizado para efetuar o Deploy e subir no ar a aplicação criada no Next.
 
 ## Deploy da Aplicação 
 
-[Deploy_da_Aplicação](https://aluraquiz-javascript-git-main.hmontarroyos.vercel.app/):
+[Deploy_da_Aplicação](https://aluraquiz-javascript-git-main.hmontarroyos.vercel.app/)
 
 
 # Notes 

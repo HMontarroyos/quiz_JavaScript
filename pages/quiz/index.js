@@ -145,7 +145,7 @@ function LoadingWidget(){
                 onSubmit();
                 setIsQuestionSubmited(false);
                 setselectedAlternative(undefined);
-              },2000)
+              },1000)
               
             }}
           >
@@ -180,8 +180,28 @@ function LoadingWidget(){
             <Button type="submit" disabled={!hasAlternativeSelected}>
               Confirmar
             </Button>
-{/*             {isQuestionSubmited && isCorrect && <p>Acertou</p>}
-                {isQuestionSubmited && !isCorrect && <p>Errou</p>} */}
+            {isQuestionSubmited && isCorrect && (
+            <img
+              alt="OptionCorrect"
+              style={{
+                width: '100%',
+                height: '220px',
+                objectFit: 'cover',
+              }}
+              src="https://media3.giphy.com/media/7NUJEtLY4zXcL8GKfr/giphy.gif"
+            />
+          )}
+          {isQuestionSubmited && !isCorrect && (
+            <img
+              alt="OptionFailed"
+              style={{
+                width: '100%',
+                height: '220px',
+                objectFit: 'cover',
+              }}
+              src="https://media0.giphy.com/media/pjFF8YLW996aXqFHAu/giphy.gif"
+            />
+          )}
           </AlternativesForm>
         </Widget.Content>
       </Widget>

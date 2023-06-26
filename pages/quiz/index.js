@@ -10,6 +10,9 @@ import Button from "../../src/Components/Button";
 import  AlternativesForm from "../../src/Components/AlternativesForm";
 import BackLinkArrow from '../../src/Components/BackLinkArrow';
 
+
+
+
 const totalQuestions = db.questions.length;
 
 function ResultWidget({ results }) {

@@ -141,7 +141,7 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 [stars-shield]: https://img.shields.io/github/stars/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
 [stars-url]: https://github.com/HMontarroyos/Quiz_JavaScript/stargazers
 [issues-shield]: https://img.shields.io/github/issues/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
-[issues-url]: https://github.com/HMontarroyos/ToDo_List/issues
+[issues-url]: https://github.com/HMontarroyos/Quiz_JavaScript/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hebertmontarroyos-developer/
 

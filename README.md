@@ -134,14 +134,14 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
-[contributors-url]: https://github.com/HMontarroyos/Quiz_JavaScript/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
-[forks-url]: https://github.com/HMontarroyos/Quiz_JavaScript/fork
-[stars-shield]: https://img.shields.io/github/stars/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
-[stars-url]: https://github.com/HMontarroyos/Quiz_JavaScript/stargazers
-[issues-shield]: https://img.shields.io/github/issues/HMontarroyos/Quiz_JavaScript.svg?style=for-the-badge
-[issues-url]: https://github.com/HMontarroyos/Quiz_JavaScript/issues
+[contributors-shield]: https://img.shields.io/github/contributors/HMontarroyos/quiz_JavaScript.svg?style=for-the-badge
+[contributors-url]: https://github.com/HMontarroyos/quiz_JavaScript/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/HMontarroyos/quiz_JavaScript.svg?style=for-the-badge
+[forks-url]: https://github.com/HMontarroyos/quiz_JavaScript/fork
+[stars-shield]: https://img.shields.io/github/stars/HMontarroyos/quiz_JavaScript.svg?style=for-the-badge
+[stars-url]: https://github.com/HMontarroyos/quiz_JavaScript/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HMontarroyos/quiz_JavaScript.svg?style=for-the-badge
+[issues-url]: https://github.com/HMontarroyos/quiz_JavaScript/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/hebertmontarroyos-developer/
 

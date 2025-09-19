@@ -22,14 +22,14 @@ import {
   quiz10,
   quiz11,
   quiz12,
-} from "../../src/assets/images/quizImages";
+} from "../../src/Assets/img/quiz";
 import {
   champion,
   correct,
   error,
   loading,
   lose,
-} from "../../src/assets/images";
+} from "../../src/Assets/img";
 
 const totalQuestions = db.questions.length;
 

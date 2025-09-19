@@ -176,4 +176,4 @@ Abrir [http://localhost:3000](http://localhost:3000) vizualizar no Navegador.
 [Vercel]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
 [Vercel-url]: https://vercel.com/
 [Deploy]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
-[Deploy-url]: https://aluraquiz-javascript.vercel.app/
+[Deploy-url]: https://quiz-java-script-smoky.vercel.app/

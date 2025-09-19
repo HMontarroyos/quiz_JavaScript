@@ -4,12 +4,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    unoptimized: true,
-  },
-  experimental: {
-    appDir: false,
-  },
 };
 
 module.exports = nextConfig;

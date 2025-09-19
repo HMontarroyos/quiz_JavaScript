@@ -2,13 +2,13 @@ import React from "react";
 import { useRouter } from "next/router";
 
 import db from "../../db.json";
-import QuizBackground from "../../src/components/QuizBackground";
-import QuizLogo from "../../src/components/QuizLogo";
-import QuizContainer from "../../src/components/QuizContainer";
-import Widget from "../../src/components/Widget";
-import Button from "../../src/components/Button";
-import AlternativesForm from "../../src/components/AlternativesForm";
-import BackLinkArrow from "../../src/components/BackLinkArrow";
+import QuizBackground from "../../src/Components/QuizBackground";
+import QuizLogo from "../../src/Components/QuizLogo";
+import QuizContainer from "../../src/Components/QuizContainer";
+import Widget from "../../src/Components/Widget";
+import Button from "../../src/Components/Button";
+import AlternativesForm from "../../src/Components/AlternativesForm";
+import BackLinkArrow from "../../src/Components/BackLinkArrow";
 import {
   quiz01,
   quiz02,

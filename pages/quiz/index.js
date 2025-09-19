@@ -9,27 +9,25 @@ import Widget from "../../src/Components/Widget";
 import Button from "../../src/Components/Button";
 import AlternativesForm from "../../src/Components/AlternativesForm";
 import BackLinkArrow from "../../src/Components/BackLinkArrow";
-import {
-  quiz01,
-  quiz02,
-  quiz03,
-  quiz04,
-  quiz05,
-  quiz06,
-  quiz07,
-  quiz08,
-  quiz09,
-  quiz10,
-  quiz11,
-  quiz12,
-} from "../../src/assets/images/quizImages";
-import {
-  champion,
-  correct,
-  error,
-  loading,
-  lose,
-} from "../../src/assets/images";
+import quiz01 from "../../src/assets/images/quizImages/quiz01.gif";
+import quiz02 from "../../src/assets/images/quizImages/quiz02.gif";
+import quiz03 from "../../src/assets/images/quizImages/quiz03.gif";
+import quiz04 from "../../src/assets/images/quizImages/quiz04.gif";
+import quiz05 from "../../src/assets/images/quizImages/quiz05.gif";
+import quiz06 from "../../src/assets/images/quizImages/quiz06.gif";
+import quiz07 from "../../src/assets/images/quizImages/quiz07.gif";
+import quiz08 from "../../src/assets/images/quizImages/quiz08.gif";
+import quiz09 from "../../src/assets/images/quizImages/quiz09.gif";
+import quiz10 from "../../src/assets/images/quizImages/quiz10.gif";
+import quiz11 from "../../src/assets/images/quizImages/quiz11.gif";
+import quiz12 from "../../src/assets/images/quizImages/quiz12.gif";
+
+import champion from "../../src/assets/images/champion.gif";
+import correct from "../../src/assets/images/correct.gif";
+import error from "../../src/assets/images/error.gif";
+import loading from "../../src/assets/images/loading.gif";
+import lose from "../../src/assets/images/lose.gif";
+
 
 const totalQuestions = db.questions.length;
 

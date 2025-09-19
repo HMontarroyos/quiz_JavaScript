@@ -1,21 +1,19 @@
 {
-  "name": "with-styled-components",
+  "name": "quiz_javascript",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "eslint:init": "eslint --init",
-    "lint": "eslint ./ --fix"
+    "lint": "eslint . --fix"
   },
   "dependencies": {
     "framer-motion": "^10.12.16",
     "next": "^15.5.3",
-    "postcss": "^8.4.35",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-is": "^18.2.0",
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
@@ -23,7 +21,7 @@
     "eslint": "^8.50.0"
   },
   "engines": {
-    "node": ">=22.0.0"
+    "node": "22.x"
   },
   "license": "MIT"
 }

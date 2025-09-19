@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import Link from '../components/Link';
+import Link from './Link';
 
 const StyledLink = styled(Link)`
   transition: .3s;

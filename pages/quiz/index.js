@@ -17,7 +17,7 @@ import quiz05 from "../../src/assets/images/quizImages/quiz05.gif";
 import quiz06 from "../../src/assets/images/quizImages/quiz06.gif";
 import quiz07 from "../../src/assets/images/quizImages/quiz07.gif";
 import quiz08 from "../../src/assets/images/quizImages/quiz08.gif";
-import quiz09 from "../../src/assets/images/quizImages/quiz09.gif";
+import quiz09 from "../../src/assets/images/quizImages/quiz09.png";
 import quiz10 from "../../src/assets/images/quizImages/quiz10.gif";
 import quiz11 from "../../src/assets/images/quizImages/quiz11.gif";
 import quiz12 from "../../src/assets/images/quizImages/quiz12.gif";

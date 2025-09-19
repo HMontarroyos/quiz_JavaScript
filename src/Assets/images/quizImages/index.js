@@ -1,0 +1,12 @@
+export { default as quiz01 } from './quiz01.gif';
+export { default as quiz02 } from './quiz02.gif';
+export { default as quiz03 } from './quiz03.gif';
+export { default as quiz04 } from './quiz04.gif';
+export { default as quiz05 } from './quiz05.gif';
+export { default as quiz06 } from './quiz06.gif';
+export { default as quiz07 } from './quiz07.gif';
+export { default as quiz08 } from './quiz08.gif';
+export { default as quiz09 } from './quiz09.png';
+export { default as quiz10 } from './quiz10.gif';
+export { default as quiz11 } from './quiz11.gif';
+export { default as quiz12 } from './quiz12.gif';

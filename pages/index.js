@@ -4,15 +4,15 @@ import {useRouter} from 'next/router';
 import {motion} from 'framer-motion';
 
 import db from "../db.json";
-import Footer from "../src/Components/Footer";
-import GitHubCorner from "../src/Components/GitHubCorner";
-import QuizBackground from "../src/Components/QuizBackground";
-import QuizLogo from "../src/Components/QuizLogo";
-import QuizContainer from "../src/Components/QuizContainer";
-import Widget from "../src/Components/Widget";
-import Input from "../src/Components/Input";
-import Button from "../src/Components/Button";
-import Link from '../src/Components/Link';
+import Footer from "../src/components/Footer";
+import GitHubCorner from "../src/components/GitHubCorner";
+import QuizBackground from "../src/components/QuizBackground";
+import QuizLogo from "../src/components/QuizLogo";
+import QuizContainer from "../src/components/QuizContainer";
+import Widget from "../src/components/Widget";
+import Input from "../src/components/Input";
+import Button from "../src/components/Button";
+import Link from '../src/components/Link';
 
 
 
